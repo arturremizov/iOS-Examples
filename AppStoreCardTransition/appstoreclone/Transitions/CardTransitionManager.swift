@@ -151,6 +151,8 @@ extension CardTransitionManager: UIViewControllerAnimatedTransitioning {
                                         width: detailView.cardView?.frame.size.width ?? 0,
                                         height: detailView.cardView?.frame.size.height ?? 0)
             
+            cardViewCopy.transform = detailView.snapshotView.transform
+            
             closeButton.alpha = transition.next.closeAlpha
             
             moveAndConvertToCardView(cardView: cardViewCopy, containerView: containerView, yOriginToMoveTo: absoluteCardViewFrame.origin.y) {
