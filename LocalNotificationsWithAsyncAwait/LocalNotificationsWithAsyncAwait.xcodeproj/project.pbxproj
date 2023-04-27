@@ -11,6 +11,7 @@
 		AF148EB529FB14B3003FC269 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF148EB429FB14B3003FC269 /* ContentView.swift */; };
 		AF148EB729FB14B5003FC269 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF148EB629FB14B5003FC269 /* Assets.xcassets */; };
 		AF148EBA29FB14B5003FC269 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF148EB929FB14B5003FC269 /* Preview Assets.xcassets */; };
+		AF148EC329FB15BA003FC269 /* NotificationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF148EC229FB15BA003FC269 /* NotificationsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		AF148EB429FB14B3003FC269 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AF148EB629FB14B5003FC269 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF148EB929FB14B5003FC269 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AF148EC229FB15BA003FC269 /* NotificationsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				AF148EB229FB14B3003FC269 /* LocalNotificationsWithAsyncAwaitApp.swift */,
 				AF148EB429FB14B3003FC269 /* ContentView.swift */,
+				AF148EC229FB15BA003FC269 /* NotificationsManager.swift */,
 				AF148EB629FB14B5003FC269 /* Assets.xcassets */,
 				AF148EB829FB14B5003FC269 /* Preview Content */,
 			);
@@ -139,6 +142,7 @@
 			files = (
 				AF148EB529FB14B3003FC269 /* ContentView.swift in Sources */,
 				AF148EB329FB14B3003FC269 /* LocalNotificationsWithAsyncAwaitApp.swift in Sources */,
+				AF148EC329FB15BA003FC269 /* NotificationsManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

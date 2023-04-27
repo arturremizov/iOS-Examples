@@ -8,12 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @EnvironmentObject private var notificationsManager: NotificationsManager
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Button {
+                requestAuthorizationForNotifications()
+            } label: {
+                Text("Request Authorization for Notifications")
+            }
         }
         .padding()
     }
@@ -22,5 +26,20 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(NotificationsManager())
+    }
+}
+
+// MARK: - Methods
+extension ContentView {
+    
+    private func requestAuthorizationForNotifications() {
+        Task {
+            do {
+                try await notificationsManager.requestAuthorizationForNotifications()
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
     }
 }

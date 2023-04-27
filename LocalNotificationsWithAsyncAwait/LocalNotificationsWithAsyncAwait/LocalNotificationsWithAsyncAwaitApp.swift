@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct LocalNotificationsWithAsyncAwaitApp: App {
+    
+    @StateObject var notificationsManager = NotificationsManager()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(notificationsManager)
         }
     }
 }
