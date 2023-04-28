@@ -12,11 +12,18 @@ struct ContentView: View {
     @EnvironmentObject private var notificationsManager: NotificationsManager
     
     var body: some View {
-        VStack {
-            Button {
+        VStack(spacing: 24) {
+            Button("Request Authorization for Notifications") {
                 requestAuthorizationForNotifications()
-            } label: {
-                Text("Request Authorization for Notifications")
+            }
+            Button("Create Notification") {
+                createNotification()
+            }
+            Button("Check Pending Notifications") {
+                checkPendingNotifications()
+            }
+            Button("Remove Notifications") {
+                notificationsManager.removeNotifications()
             }
         }
         .padding()
@@ -40,6 +47,22 @@ extension ContentView {
             } catch {
                 print(error.localizedDescription)
             }
+        }
+    }
+    
+    private func createNotification() {
+        Task {
+            do {
+                try await notificationsManager.createNotification()
+            } catch {
+                print("⛔️ \(error.localizedDescription)")
+            }
+        }
+    }
+    
+    private func checkPendingNotifications() {
+        Task {
+            await notificationsManager.checkPendingNotifications()
         }
     }
 }
