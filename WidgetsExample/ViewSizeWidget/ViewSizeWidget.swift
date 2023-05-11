@@ -8,11 +8,13 @@
 import WidgetKit
 import SwiftUI
 
+// MARK: - The Timeline Entry
 struct ViewSizeEntry: TimelineEntry {
     let date: Date
     let providerInfo: String
 }
 
+// MARK: - The Widget View
 struct ViewSizeWidgetView: View {
     
     let entry: ViewSizeEntry
@@ -43,7 +45,7 @@ struct ViewSizeWidget_Previews: PreviewProvider {
     }
 }
 
-
+// MARK: - The Timeline Provider
 struct ViewSizeTimelineProvider: TimelineProvider {
     
     typealias Entry = ViewSizeEntry
@@ -64,6 +66,7 @@ struct ViewSizeTimelineProvider: TimelineProvider {
     }
 }
 
+// MARK: - The Widget Configuration
 struct ViewSizeWidget: Widget {
     let kind: String = "ViewSizeWidget"
     
