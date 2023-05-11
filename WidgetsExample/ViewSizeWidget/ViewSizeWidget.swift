@@ -14,8 +14,68 @@ struct ViewSizeEntry: TimelineEntry {
     let providerInfo: String
 }
 
-// MARK: - The Widget View
+// MARK: - The Widget Views
 struct ViewSizeWidgetView: View {
+    
+    let entry: ViewSizeEntry
+    @Environment(\.widgetFamily) var widgetFamily
+    
+    var body: some View {
+        switch widgetFamily {
+        case .accessoryInline:
+            InlineWidgetView()
+        case .accessoryRectangular:
+            RectangularWidgetView()
+        case .accessoryCircular:
+            CircularWidgetView()
+        default:
+            HomeScreenWidgetView(entry: entry)
+        }
+    }
+}
+
+struct InlineWidgetView: View {
+    
+    var body: some View {
+        ViewThatFits {
+            Text("🤷‍♀️ View size not available 🤷‍♂️")
+            Text("🤷‍♀️ Nope 🤷‍♂️")
+        }
+    }
+}
+
+struct RectangularWidgetView: View {
+    
+    var body: some View {
+        ZStack {
+            AccessoryWidgetBackground()
+                .cornerRadius(8)
+
+            GeometryReader { geometry in
+                Text("\(Int(geometry.size.width)) x \(Int(geometry.size.height))")
+                    .font(.headline)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+            }
+        }
+    }
+}
+
+struct CircularWidgetView: View {
+    var body: some View {
+        GeometryReader { geometry in
+            ZStack {
+                AccessoryWidgetBackground()
+                VStack {
+                    Text("W: \(Int(geometry.size.width))")
+                    Text("H: \(Int(geometry.size.height))")
+                }
+                .font(.headline)
+            }
+        }
+    }
+}
+
+struct HomeScreenWidgetView: View {
     
     let entry: ViewSizeEntry
     
@@ -41,7 +101,7 @@ struct ViewSizeWidget_Previews: PreviewProvider {
         ViewSizeWidgetView(
             entry: ViewSizeEntry(date: Date(), providerInfo: "preview")
         )
-        .previewContext(WidgetPreviewContext(family: .systemSmall))
+        .previewContext(WidgetPreviewContext(family: .accessoryInline))
     }
 }
 
@@ -79,7 +139,12 @@ struct ViewSizeWidget: Widget {
         .supportedFamilies([
             .systemSmall,
             .systemMedium,
-            .systemLarge
+            .systemLarge,
+            
+            // support to Lock Screen widgets
+            .accessoryCircular,
+            .accessoryRectangular,
+            .accessoryInline
         ])
     }
 }
