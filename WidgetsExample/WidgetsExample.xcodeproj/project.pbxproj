@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF6A81442A0ED6D300EBB886 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF9508562A0D38F80040A858 /* WidgetKit.framework */; };
+		AF6A81452A0ED6D300EBB886 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF9508582A0D38F80040A858 /* SwiftUI.framework */; };
+		AF6A81482A0ED6D300EBB886 /* MyTextWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6A81472A0ED6D300EBB886 /* MyTextWidgetBundle.swift */; };
+		AF6A814A2A0ED6D300EBB886 /* MyTextWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6A81492A0ED6D300EBB886 /* MyTextWidget.swift */; };
+		AF6A814D2A0ED6D500EBB886 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF6A814C2A0ED6D500EBB886 /* Assets.xcassets */; };
+		AF6A814F2A0ED6D500EBB886 /* MyTextWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = AF6A814B2A0ED6D300EBB886 /* MyTextWidget.intentdefinition */; };
+		AF6A81502A0ED6D500EBB886 /* MyTextWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = AF6A814B2A0ED6D300EBB886 /* MyTextWidget.intentdefinition */; };
+		AF6A81532A0ED6D500EBB886 /* MyTextWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = AF6A81432A0ED6D300EBB886 /* MyTextWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AF844BB72A0E7E6700E73B8E /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF9508562A0D38F80040A858 /* WidgetKit.framework */; };
 		AF844BB82A0E7E6700E73B8E /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF9508582A0D38F80040A858 /* SwiftUI.framework */; };
 		AF844BBB2A0E7E6700E73B8E /* CountdownWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF844BBA2A0E7E6700E73B8E /* CountdownWidgetBundle.swift */; };
@@ -33,6 +41,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		AF6A81512A0ED6D500EBB886 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF9508372A0D37160040A858 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF6A81422A0ED6D300EBB886;
+			remoteInfo = MyTextWidgetExtension;
+		};
 		AF844BC12A0E7E6800E73B8E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AF9508372A0D37160040A858 /* Project object */;
@@ -66,6 +81,7 @@
 				AF844BC32A0E7E6800E73B8E /* CountdownWidgetExtension.appex in Embed Foundation Extensions */,
 				AF9508642A0D38FA0040A858 /* ViewSizeWidgetExtension.appex in Embed Foundation Extensions */,
 				AF844BD82A0E8C9E00E73B8E /* DoggyWidgetExtension.appex in Embed Foundation Extensions */,
+				AF6A81532A0ED6D500EBB886 /* MyTextWidgetExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -73,6 +89,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AF6A81432A0ED6D300EBB886 /* MyTextWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyTextWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF6A81472A0ED6D300EBB886 /* MyTextWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTextWidgetBundle.swift; sourceTree = "<group>"; };
+		AF6A81492A0ED6D300EBB886 /* MyTextWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTextWidget.swift; sourceTree = "<group>"; };
+		AF6A814B2A0ED6D300EBB886 /* MyTextWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = MyTextWidget.intentdefinition; sourceTree = "<group>"; };
+		AF6A814C2A0ED6D500EBB886 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF6A814E2A0ED6D500EBB886 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF6A81572A0ED7AE00EBB886 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		AF844BB62A0E7E6600E73B8E /* CountdownWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CountdownWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF844BBA2A0E7E6700E73B8E /* CountdownWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownWidgetBundle.swift; sourceTree = "<group>"; };
 		AF844BBC2A0E7E6700E73B8E /* CountdownWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownWidget.swift; sourceTree = "<group>"; };
@@ -99,6 +122,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AF6A81402A0ED6D300EBB886 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF6A81452A0ED6D300EBB886 /* SwiftUI.framework in Frameworks */,
+				AF6A81442A0ED6D300EBB886 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AF844BB32A0E7E6600E73B8E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -136,6 +168,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF6A81462A0ED6D300EBB886 /* MyTextWidget */ = {
+			isa = PBXGroup;
+			children = (
+				AF6A81472A0ED6D300EBB886 /* MyTextWidgetBundle.swift */,
+				AF6A81492A0ED6D300EBB886 /* MyTextWidget.swift */,
+				AF6A814B2A0ED6D300EBB886 /* MyTextWidget.intentdefinition */,
+				AF6A814C2A0ED6D500EBB886 /* Assets.xcassets */,
+				AF6A814E2A0ED6D500EBB886 /* Info.plist */,
+			);
+			path = MyTextWidget;
+			sourceTree = "<group>";
+		};
 		AF844BB92A0E7E6700E73B8E /* CountdownWidget */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +210,7 @@
 				AF95085A2A0D38F80040A858 /* ViewSizeWidget */,
 				AF844BB92A0E7E6700E73B8E /* CountdownWidget */,
 				AF844BCE2A0E8C9C00E73B8E /* DoggyWidget */,
+				AF6A81462A0ED6D300EBB886 /* MyTextWidget */,
 				AF9508552A0D38F80040A858 /* Frameworks */,
 				AF9508402A0D37160040A858 /* Products */,
 			);
@@ -178,6 +223,7 @@
 				AF9508542A0D38F80040A858 /* ViewSizeWidgetExtension.appex */,
 				AF844BB62A0E7E6600E73B8E /* CountdownWidgetExtension.appex */,
 				AF844BCB2A0E8C9C00E73B8E /* DoggyWidgetExtension.appex */,
+				AF6A81432A0ED6D300EBB886 /* MyTextWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -185,6 +231,7 @@
 		AF9508412A0D37160040A858 /* WidgetsExample */ = {
 			isa = PBXGroup;
 			children = (
+				AF6A81572A0ED7AE00EBB886 /* Info.plist */,
 				AF9508422A0D37160040A858 /* WidgetsExampleApp.swift */,
 				AF9508442A0D37160040A858 /* ContentView.swift */,
 				AF9508462A0D37180040A858 /* Assets.xcassets */,
@@ -224,6 +271,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		AF6A81422A0ED6D300EBB886 /* MyTextWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF6A81562A0ED6D500EBB886 /* Build configuration list for PBXNativeTarget "MyTextWidgetExtension" */;
+			buildPhases = (
+				AF6A813F2A0ED6D300EBB886 /* Sources */,
+				AF6A81402A0ED6D300EBB886 /* Frameworks */,
+				AF6A81412A0ED6D300EBB886 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyTextWidgetExtension;
+			productName = MyTextWidgetExtension;
+			productReference = AF6A81432A0ED6D300EBB886 /* MyTextWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		AF844BB52A0E7E6600E73B8E /* CountdownWidgetExtension */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF844BC62A0E7E6800E73B8E /* Build configuration list for PBXNativeTarget "CountdownWidgetExtension" */;
@@ -273,6 +337,7 @@
 				AF9508632A0D38FA0040A858 /* PBXTargetDependency */,
 				AF844BC22A0E7E6800E73B8E /* PBXTargetDependency */,
 				AF844BD72A0E8C9E00E73B8E /* PBXTargetDependency */,
+				AF6A81522A0ED6D500EBB886 /* PBXTargetDependency */,
 			);
 			name = WidgetsExample;
 			productName = WidgetsExample;
@@ -306,6 +371,9 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					AF6A81422A0ED6D300EBB886 = {
+						CreatedOnToolsVersion = 14.3;
+					};
 					AF844BB52A0E7E6600E73B8E = {
 						CreatedOnToolsVersion = 14.3;
 					};
@@ -337,11 +405,20 @@
 				AF9508532A0D38F80040A858 /* ViewSizeWidgetExtension */,
 				AF844BB52A0E7E6600E73B8E /* CountdownWidgetExtension */,
 				AF844BCA2A0E8C9C00E73B8E /* DoggyWidgetExtension */,
+				AF6A81422A0ED6D300EBB886 /* MyTextWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		AF6A81412A0ED6D300EBB886 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF6A814D2A0ED6D500EBB886 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AF844BB42A0E7E6600E73B8E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -378,6 +455,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		AF6A813F2A0ED6D300EBB886 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF6A814F2A0ED6D500EBB886 /* MyTextWidget.intentdefinition in Sources */,
+				AF6A814A2A0ED6D300EBB886 /* MyTextWidget.swift in Sources */,
+				AF6A81482A0ED6D300EBB886 /* MyTextWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AF844BB22A0E7E6600E73B8E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -401,6 +488,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF6A81502A0ED6D500EBB886 /* MyTextWidget.intentdefinition in Sources */,
 				AF9508452A0D37160040A858 /* ContentView.swift in Sources */,
 				AF9508432A0D37160040A858 /* WidgetsExampleApp.swift in Sources */,
 			);
@@ -418,6 +506,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		AF6A81522A0ED6D500EBB886 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF6A81422A0ED6D300EBB886 /* MyTextWidgetExtension */;
+			targetProxy = AF6A81512A0ED6D500EBB886 /* PBXContainerItemProxy */;
+		};
 		AF844BC22A0E7E6800E73B8E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = AF844BB52A0E7E6600E73B8E /* CountdownWidgetExtension */;
@@ -436,6 +529,60 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		AF6A81542A0ED6D500EBB886 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7B475922E3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyTextWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyTextWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arturremizov.WidgetsExample.MyTextWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF6A81552A0ED6D500EBB886 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7B475922E3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyTextWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyTextWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arturremizov.WidgetsExample.MyTextWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		AF844BC42A0E7E6800E73B8E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -670,6 +817,7 @@
 				DEVELOPMENT_TEAM = 7B475922E3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WidgetsExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -700,6 +848,7 @@
 				DEVELOPMENT_TEAM = 7B475922E3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WidgetsExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -777,6 +926,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AF6A81562A0ED6D500EBB886 /* Build configuration list for PBXNativeTarget "MyTextWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF6A81542A0ED6D500EBB886 /* Debug */,
+				AF6A81552A0ED6D500EBB886 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AF844BC62A0E7E6800E73B8E /* Build configuration list for PBXNativeTarget "CountdownWidgetExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
