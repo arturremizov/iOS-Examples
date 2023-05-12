@@ -101,7 +101,7 @@ struct ViewSizeWidget_Previews: PreviewProvider {
         ViewSizeWidgetView(
             entry: ViewSizeEntry(date: Date(), providerInfo: "preview")
         )
-        .previewContext(WidgetPreviewContext(family: .accessoryInline))
+        .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }
 
