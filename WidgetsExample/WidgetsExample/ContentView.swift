@@ -8,14 +8,40 @@
 import SwiftUI
 
 struct ContentView: View {
+     
+    @State private var widgetBackgroundColor: BackgroundColor? = nil
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("Widget Demo App!")
         }
         .padding()
+        .sheet(item: $widgetBackgroundColor) { backgroundColor in
+            VStack {
+                Text("\(backgroundColor.colorName) view".capitalized)
+                    .font(.largeTitle)
+                    .foregroundColor(.white)
+
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(backgroundColor.color)
+        }
+        .onOpenURL { url in
+            handleWidgetDeepLink(url)
+        }
+    }
+    
+    private func handleWidgetDeepLink(_ url: URL) {
+        guard
+            let scheme = url.scheme,
+            let host = url.host(),
+            scheme == BackgroundColor.widgetScheme,
+            let backgroundColor = BackgroundColor.backgroundColor(for: host)
+        else { return }
+        widgetBackgroundColor = backgroundColor
     }
 }
 
