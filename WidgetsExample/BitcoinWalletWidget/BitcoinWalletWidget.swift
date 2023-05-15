@@ -42,22 +42,50 @@ struct BitcoinWalletEntry: TimelineEntry {
 }
 
 struct BitcoinWalletWidgetEntryView : View {
+    
     var entry: BitcoinWalletEntry
-
+    @Environment(\.redactionReasons) private var redactionReasons
+    
     var body: some View {
-        VStack(alignment: .leading) {
-            Text(entry.title)
-                .font(.title2)
-                .bold()
-                .foregroundColor(.orange)
+        ZStack {
+            customRedactActivateView
             
-            Text(entry.amount)
-                .font(.headline)
-                .fontWeight(.semibold)
-                .foregroundColor(.gray)
-                .privacySensitive()
+            VStack(alignment: .leading) {
+                Text(entry.title)
+                    .font(.title2)
+                    .bold()
+                    .foregroundColor(.orange)
+                
+    //            Text(entry.amount)
+    //                .font(.headline)
+    //                .fontWeight(.semibold)
+    //                .foregroundColor(.gray)
+    //                .privacySensitive()
+                if redactionReasons.isEmpty {
+                    amountTextView
+                } else {
+                    amountTextView
+                        .blur(radius: 4)
+                }
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
+    }
+}
+
+extension BitcoinWalletWidgetEntryView {
+    
+    private var amountTextView: some View {
+        Text(entry.amount)
+            .font(.headline)
+            .fontWeight(.semibold)
+            .foregroundColor(.gray)
+    }
+    
+    private var customRedactActivateView: some View {
+        Text("---")
+            .privacySensitive()
+            .frame(maxWidth: .infinity, maxHeight: 0.0)
     }
 }
 
