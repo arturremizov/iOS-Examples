@@ -64,6 +64,12 @@
 		AFA303B02A1114C60036B2E2 /* TapMeWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = AFA303A02A1114C40036B2E2 /* TapMeWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AFA303B52A11219E0036B2E2 /* BackgroundColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA303B42A11219E0036B2E2 /* BackgroundColor+Extensions.swift */; };
 		AFA303B62A11219E0036B2E2 /* BackgroundColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA303B42A11219E0036B2E2 /* BackgroundColor+Extensions.swift */; };
+		AFA5DA642A125C5700F8250A /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF9508562A0D38F80040A858 /* WidgetKit.framework */; };
+		AFA5DA652A125C5700F8250A /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF9508582A0D38F80040A858 /* SwiftUI.framework */; };
+		AFA5DA682A125C5700F8250A /* BitcoinWalletWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA5DA672A125C5700F8250A /* BitcoinWalletWidgetBundle.swift */; };
+		AFA5DA6A2A125C5700F8250A /* BitcoinWalletWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA5DA692A125C5700F8250A /* BitcoinWalletWidget.swift */; };
+		AFA5DA6C2A125C5900F8250A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFA5DA6B2A125C5900F8250A /* Assets.xcassets */; };
+		AFA5DA702A125C5900F8250A /* BitcoinWalletWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = AFA5DA632A125C5700F8250A /* BitcoinWalletWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +122,13 @@
 			remoteGlobalIDString = AFA3039F2A1114C40036B2E2;
 			remoteInfo = TapMeWidgetExtension;
 		};
+		AFA5DA6E2A125C5900F8250A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF9508372A0D37160040A858 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFA5DA622A125C5700F8250A;
+			remoteInfo = BitcoinWalletWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -125,6 +138,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				AFA5DA702A125C5900F8250A /* BitcoinWalletWidgetExtension.appex in Embed Foundation Extensions */,
 				AF844BC32A0E7E6800E73B8E /* CountdownWidgetExtension.appex in Embed Foundation Extensions */,
 				AF9508642A0D38FA0040A858 /* ViewSizeWidgetExtension.appex in Embed Foundation Extensions */,
 				AF707DBF2A0FC1900051C137 /* CryptoPriceWidgetExtension.appex in Embed Foundation Extensions */,
@@ -188,6 +202,12 @@
 		AFA303A92A1114C60036B2E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFA303AB2A1114C60036B2E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFA303B42A11219E0036B2E2 /* BackgroundColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BackgroundColor+Extensions.swift"; sourceTree = "<group>"; };
+		AFA5DA632A125C5700F8250A /* BitcoinWalletWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BitcoinWalletWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFA5DA672A125C5700F8250A /* BitcoinWalletWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinWalletWidgetBundle.swift; sourceTree = "<group>"; };
+		AFA5DA692A125C5700F8250A /* BitcoinWalletWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinWalletWidget.swift; sourceTree = "<group>"; };
+		AFA5DA6B2A125C5900F8250A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AFA5DA6D2A125C5900F8250A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFA5DA772A12614200F8250A /* BitcoinWalletWidgetExtension.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; name = BitcoinWalletWidgetExtension.entitlements; path = ../../../../.Trash/BitcoinWalletWidgetExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,6 +277,15 @@
 			files = (
 				AFA303A22A1114C40036B2E2 /* SwiftUI.framework in Frameworks */,
 				AFA303A12A1114C40036B2E2 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFA5DA602A125C5700F8250A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFA5DA652A125C5700F8250A /* SwiftUI.framework in Frameworks */,
+				AFA5DA642A125C5700F8250A /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +361,8 @@
 				AF707DB22A0FC18E0051C137 /* CryptoPriceWidget */,
 				AF707DCA2A0FC5690051C137 /* CryptoPriceIntentExtensions */,
 				AFA303A32A1114C40036B2E2 /* TapMeWidget */,
+				AFA5DA662A125C5700F8250A /* BitcoinWalletWidget */,
+				AFA5DA772A12614200F8250A /* BitcoinWalletWidgetExtension.entitlements */,
 				AF9508552A0D38F80040A858 /* Frameworks */,
 				AF9508402A0D37160040A858 /* Products */,
 			);
@@ -348,6 +379,7 @@
 				AF707DAF2A0FC18E0051C137 /* CryptoPriceWidgetExtension.appex */,
 				AF707DC72A0FC5690051C137 /* CryptoPriceIntentExtensions.appex */,
 				AFA303A02A1114C40036B2E2 /* TapMeWidgetExtension.appex */,
+				AFA5DA632A125C5700F8250A /* BitcoinWalletWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -404,6 +436,17 @@
 				AFA303AB2A1114C60036B2E2 /* Info.plist */,
 			);
 			path = TapMeWidget;
+			sourceTree = "<group>";
+		};
+		AFA5DA662A125C5700F8250A /* BitcoinWalletWidget */ = {
+			isa = PBXGroup;
+			children = (
+				AFA5DA672A125C5700F8250A /* BitcoinWalletWidgetBundle.swift */,
+				AFA5DA692A125C5700F8250A /* BitcoinWalletWidget.swift */,
+				AFA5DA6B2A125C5900F8250A /* Assets.xcassets */,
+				AFA5DA6D2A125C5900F8250A /* Info.plist */,
+			);
+			path = BitcoinWalletWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -513,6 +556,7 @@
 				AF707DBE2A0FC1900051C137 /* PBXTargetDependency */,
 				AF707DCF2A0FC5690051C137 /* PBXTargetDependency */,
 				AFA303AF2A1114C60036B2E2 /* PBXTargetDependency */,
+				AFA5DA6F2A125C5900F8250A /* PBXTargetDependency */,
 			);
 			name = WidgetsExample;
 			productName = WidgetsExample;
@@ -553,6 +597,23 @@
 			productReference = AFA303A02A1114C40036B2E2 /* TapMeWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		AFA5DA622A125C5700F8250A /* BitcoinWalletWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFA5DA732A125C5900F8250A /* Build configuration list for PBXNativeTarget "BitcoinWalletWidgetExtension" */;
+			buildPhases = (
+				AFA5DA5F2A125C5700F8250A /* Sources */,
+				AFA5DA602A125C5700F8250A /* Frameworks */,
+				AFA5DA612A125C5700F8250A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BitcoinWalletWidgetExtension;
+			productName = BitcoinWalletWidgetExtension;
+			productReference = AFA5DA632A125C5700F8250A /* BitcoinWalletWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -587,6 +648,9 @@
 					AFA3039F2A1114C40036B2E2 = {
 						CreatedOnToolsVersion = 14.3;
 					};
+					AFA5DA622A125C5700F8250A = {
+						CreatedOnToolsVersion = 14.3;
+					};
 				};
 			};
 			buildConfigurationList = AF95083A2A0D37160040A858 /* Build configuration list for PBXProject "WidgetsExample" */;
@@ -610,6 +674,7 @@
 				AF707DAE2A0FC18E0051C137 /* CryptoPriceWidgetExtension */,
 				AF707DC62A0FC5690051C137 /* CryptoPriceIntentExtensions */,
 				AFA3039F2A1114C40036B2E2 /* TapMeWidgetExtension */,
+				AFA5DA622A125C5700F8250A /* BitcoinWalletWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -676,6 +741,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFA303AA2A1114C60036B2E2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFA5DA612A125C5700F8250A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFA5DA6C2A125C5900F8250A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -767,6 +840,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AFA5DA5F2A125C5700F8250A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFA5DA682A125C5700F8250A /* BitcoinWalletWidgetBundle.swift in Sources */,
+				AFA5DA6A2A125C5700F8250A /* BitcoinWalletWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -804,6 +886,11 @@
 			isa = PBXTargetDependency;
 			target = AFA3039F2A1114C40036B2E2 /* TapMeWidgetExtension */;
 			targetProxy = AFA303AE2A1114C60036B2E2 /* PBXContainerItemProxy */;
+		};
+		AFA5DA6F2A125C5900F8250A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFA5DA622A125C5700F8250A /* BitcoinWalletWidgetExtension */;
+			targetProxy = AFA5DA6E2A125C5900F8250A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -867,6 +954,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7B475922E3;
@@ -882,6 +971,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.arturremizov.WidgetsExample.CryptoPriceWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -894,6 +984,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7B475922E3;
@@ -909,6 +1001,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.arturremizov.WidgetsExample.CryptoPriceWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -1360,6 +1453,66 @@
 			};
 			name = Release;
 		};
+		AFA5DA712A125C5900F8250A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = BitcoinWalletWidgetExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7B475922E3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BitcoinWalletWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BitcoinWalletWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arturremizov.WidgetsExample.BitcoinWalletWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AFA5DA722A125C5900F8250A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = BitcoinWalletWidgetExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7B475922E3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BitcoinWalletWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BitcoinWalletWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arturremizov.WidgetsExample.BitcoinWalletWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1440,6 +1593,15 @@
 			buildConfigurations = (
 				AFA303B12A1114C60036B2E2 /* Debug */,
 				AFA303B22A1114C60036B2E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFA5DA732A125C5900F8250A /* Build configuration list for PBXNativeTarget "BitcoinWalletWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFA5DA712A125C5900F8250A /* Debug */,
+				AFA5DA722A125C5900F8250A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
