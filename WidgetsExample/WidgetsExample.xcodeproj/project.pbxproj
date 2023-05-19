@@ -172,6 +172,7 @@
 		AF707DC82A0FC5690051C137 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
 		AF707DCB2A0FC5690051C137 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
 		AF707DCD2A0FC5690051C137 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF75BBC12A17B1100028026F /* BitcoinWalletWidgetExtension.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = BitcoinWalletWidgetExtension.entitlements; sourceTree = "<group>"; };
 		AF844BB62A0E7E6600E73B8E /* CountdownWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CountdownWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF844BBA2A0E7E6700E73B8E /* CountdownWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownWidgetBundle.swift; sourceTree = "<group>"; };
 		AF844BBC2A0E7E6700E73B8E /* CountdownWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownWidget.swift; sourceTree = "<group>"; };
@@ -207,7 +208,6 @@
 		AFA5DA692A125C5700F8250A /* BitcoinWalletWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinWalletWidget.swift; sourceTree = "<group>"; };
 		AFA5DA6B2A125C5900F8250A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFA5DA6D2A125C5900F8250A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AFA5DA772A12614200F8250A /* BitcoinWalletWidgetExtension.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; name = BitcoinWalletWidgetExtension.entitlements; path = ../../../../.Trash/BitcoinWalletWidgetExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -362,7 +362,7 @@
 				AF707DCA2A0FC5690051C137 /* CryptoPriceIntentExtensions */,
 				AFA303A32A1114C40036B2E2 /* TapMeWidget */,
 				AFA5DA662A125C5700F8250A /* BitcoinWalletWidget */,
-				AFA5DA772A12614200F8250A /* BitcoinWalletWidgetExtension.entitlements */,
+				AF75BBC12A17B1100028026F /* BitcoinWalletWidgetExtension.entitlements */,
 				AF9508552A0D38F80040A858 /* Frameworks */,
 				AF9508402A0D37160040A858 /* Products */,
 			);
