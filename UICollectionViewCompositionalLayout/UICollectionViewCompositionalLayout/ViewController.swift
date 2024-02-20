@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     
     private func setupCollectionView() {
         collectionView = UICollectionView(frame: .zero, collectionViewLayout: GridCompositionalLayout.generateLayout())
+        collectionView.register(LetterCell.self, forCellWithReuseIdentifier: String(describing: LetterCell.self))
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
         collectionView.register(HeaderView.self,
                                 forSupplementaryViewOfKind: SupplementaryElements.collectionHeader,
@@ -45,11 +46,25 @@ class ViewController: UIViewController {
 // MARK: - UICollectionViewDataSource
 extension ViewController: UICollectionViewDataSource {
     
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 2
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if section == 0 {
+            return model.letters.count
+        }
         return model.colors.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if indexPath.section == 0 {
+            let identifier = String(describing: LetterCell.self)
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as! LetterCell
+            cell.label.text = String(model.letters[indexPath.row])
+            return cell
+        }
+        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
         cell.backgroundColor = model.colors[indexPath.row]
         return cell

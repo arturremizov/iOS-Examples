@@ -19,6 +19,14 @@ extension UIColor {
 }
 
 final class ColorRepository {
+    lazy var letters: [Character] = {
+        let aScalars = "a".unicodeScalars
+        let aCode = aScalars[aScalars.startIndex].value
+        return (0..<26).map {
+            Character(Unicode.Scalar(aCode + $0) ?? aScalars[aScalars.startIndex])
+        }
+    }()
+    
     lazy var colors: [UIColor] = {
         (0...100).map { _ in UIColor.random }
     }()

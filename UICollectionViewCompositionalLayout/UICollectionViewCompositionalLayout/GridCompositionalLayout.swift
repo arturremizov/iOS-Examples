@@ -18,29 +18,56 @@ enum GridCompositionalLayout {
     static func generateLayout() -> UICollectionViewCompositionalLayout {
         let config = UICollectionViewCompositionalLayoutConfiguration()
         config.boundarySupplementaryItems = [makeCollectionHeader()]
-        return UICollectionViewCompositionalLayout(section: makeSection(), configuration: config)
+        return UICollectionViewCompositionalLayout(sectionProvider: { section, _ in
+            if section == 0 {
+                return makeLetterSection()
+            } else {
+                return makeColorSection()
+            }
+        }, configuration: config)
     }
     
-    // MARK: - Collection Layout
-    private static func makeSection() -> NSCollectionLayoutSection {
-        let section = NSCollectionLayoutSection(group: makeGroup())
+    // MARK: - Letter Section
+    private static func makeLetterSection() -> NSCollectionLayoutSection {
+        let section = NSCollectionLayoutSection(group: makeLetterGroup())
+        section.contentInsets = .init(top: 16, leading: 0, bottom: 16, trailing: 0)
+        section.orthogonalScrollingBehavior = .groupPagingCentered
+        return section
+    }
+    
+    private static func makeLetterGroup() -> NSCollectionLayoutGroup {
+        let layoutSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(3/8), heightDimension: .fractionalWidth(6/8))
+        return NSCollectionLayoutGroup.vertical(layoutSize: layoutSize, subitems: [makeLetterItem()])
+    }
+    
+    private static func makeLetterItem() -> NSCollectionLayoutItem {
+        let layoutSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1),
+                                                heightDimension: .fractionalWidth(0.5))
+        let item = NSCollectionLayoutItem(layoutSize: layoutSize)
+        item.contentInsets = .init(top: 3, leading: 3, bottom: 3, trailing: 3)
+        return item
+    }
+    
+    // MARK: - Color Section
+    private static func makeColorSection() -> NSCollectionLayoutSection {
+        let section = NSCollectionLayoutSection(group: makeColorGroup())
         section.contentInsets = .init(top: 16, leading: 0, bottom: 0, trailing: 0)
         section.boundarySupplementaryItems = [makeSpacer(), makeSectionHeader()]
         return section
     }
     
-    private static func makeGroup() -> NSCollectionLayoutGroup {
+    private static func makeColorGroup() -> NSCollectionLayoutGroup {
         let contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 2, bottom: 4, trailing: 2)
          
         let layoutSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1),
                                                 heightDimension: .fractionalWidth(0.5))
-        let group = NSCollectionLayoutGroup.horizontal(layoutSize: layoutSize, subitems: [makeItem()])
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: layoutSize, subitems: [makeColorItem()])
         group.contentInsets = contentInsets
         
         
         let bigItemLayoutSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1),
                                                        heightDimension: .fractionalWidth(1))
-        let groupWithBigItem = NSCollectionLayoutGroup.horizontal(layoutSize: bigItemLayoutSize, subitems: [makeBigItem()])
+        let groupWithBigItem = NSCollectionLayoutGroup.horizontal(layoutSize: bigItemLayoutSize, subitems: [makeColorBigItem()])
         groupWithBigItem.contentInsets = contentInsets
         
         
@@ -53,7 +80,7 @@ enum GridCompositionalLayout {
         return compositionalGroup
     }
     
-    private static func makeItem() -> NSCollectionLayoutItem {
+    private static func makeColorItem() -> NSCollectionLayoutItem {
         let layoutSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.5),
                                                 heightDimension: .fractionalWidth(0.5))
         let item = NSCollectionLayoutItem(layoutSize: layoutSize)
@@ -61,7 +88,7 @@ enum GridCompositionalLayout {
         return item
     }
     
-    private static func makeBigItem() -> NSCollectionLayoutItem {
+    private static func makeColorBigItem() -> NSCollectionLayoutItem {
         let layoutSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1),
                                                 heightDimension: .fractionalWidth(1))
         let item = NSCollectionLayoutItem(layoutSize: layoutSize)

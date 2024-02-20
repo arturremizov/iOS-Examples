@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AF01A08F2B7EA6D500864351 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF01A08E2B7EA6D500864351 /* HeaderView.swift */; };
 		AF01A0912B7EA79000864351 /* SpacerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF01A0902B7EA79000864351 /* SpacerView.swift */; };
+		AF58E55D2B850A6100A28689 /* LetterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF58E55C2B850A6100A28689 /* LetterCell.swift */; };
 		AF9B2C912B7E764600B9FD90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9B2C902B7E764600B9FD90 /* AppDelegate.swift */; };
 		AF9B2C932B7E764600B9FD90 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9B2C922B7E764600B9FD90 /* SceneDelegate.swift */; };
 		AF9B2C952B7E764600B9FD90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9B2C942B7E764600B9FD90 /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		AF01A08E2B7EA6D500864351 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		AF01A0902B7EA79000864351 /* SpacerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacerView.swift; sourceTree = "<group>"; };
+		AF58E55C2B850A6100A28689 /* LetterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterCell.swift; sourceTree = "<group>"; };
 		AF9B2C8D2B7E764600B9FD90 /* UICollectionViewCompositionalLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UICollectionViewCompositionalLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF9B2C902B7E764600B9FD90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF9B2C922B7E764600B9FD90 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,13 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AF01A0922B7EA7A500864351 /* Supplementary Views */ = {
+		AF01A0922B7EA7A500864351 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				AF01A08E2B7EA6D500864351 /* HeaderView.swift */,
 				AF01A0902B7EA79000864351 /* SpacerView.swift */,
+				AF58E55C2B850A6100A28689 /* LetterCell.swift */,
 			);
-			path = "Supplementary Views";
+			path = Views;
 			sourceTree = "<group>";
 		};
 		AF9B2C842B7E764600B9FD90 = {
@@ -74,8 +77,8 @@
 				AF9B2CA42B7E76B300B9FD90 /* Application */,
 				AF9B2CA52B7E76C600B9FD90 /* ColorRepository.swift */,
 				AF9B2CA72B7E777F00B9FD90 /* GridCompositionalLayout.swift */,
-				AF01A0922B7EA7A500864351 /* Supplementary Views */,
 				AF9B2C942B7E764600B9FD90 /* ViewController.swift */,
+				AF01A0922B7EA7A500864351 /* Views */,
 				AF9B2C992B7E764900B9FD90 /* Assets.xcassets */,
 				AF9B2C9B2B7E764900B9FD90 /* LaunchScreen.storyboard */,
 				AF9B2C9E2B7E764900B9FD90 /* Info.plist */,
@@ -165,6 +168,7 @@
 				AF01A0912B7EA79000864351 /* SpacerView.swift in Sources */,
 				AF9B2C952B7E764600B9FD90 /* ViewController.swift in Sources */,
 				AF01A08F2B7EA6D500864351 /* HeaderView.swift in Sources */,
+				AF58E55D2B850A6100A28689 /* LetterCell.swift in Sources */,
 				AF9B2CA82B7E777F00B9FD90 /* GridCompositionalLayout.swift in Sources */,
 				AF9B2C912B7E764600B9FD90 /* AppDelegate.swift in Sources */,
 				AF9B2C932B7E764600B9FD90 /* SceneDelegate.swift in Sources */,
