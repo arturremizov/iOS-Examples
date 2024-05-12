@@ -84,8 +84,9 @@ struct CountdownWidgetEntryView : View {
                 .foregroundColor(Color(.systemGray))
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.black)
-        
+        .containerBackground(for: .widget) {
+            Color.black
+        }
     }
     
     private func getFutureDate() -> Date {
@@ -106,6 +107,7 @@ struct CountdownWidget: Widget {
         }
         .configurationDisplayName("Countdown Widget")
         .description("This is a demo widget.")
+        .contentMarginsDisabled()
         .supportedFamilies([
             .systemSmall
         ])

@@ -47,16 +47,12 @@ struct InlineWidgetView: View {
 struct RectangularWidgetView: View {
     
     var body: some View {
-        ZStack {
-            AccessoryWidgetBackground()
-                .cornerRadius(8)
-
-            GeometryReader { geometry in
-                Text("\(Int(geometry.size.width)) x \(Int(geometry.size.height))")
-                    .font(.headline)
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
-            }
+        GeometryReader { geometry in
+            Text("\(Int(geometry.size.width)) x \(Int(geometry.size.height))")
+                .font(.headline)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
+        .containerBackground(for: .widget) { }
     }
 }
 
@@ -64,13 +60,16 @@ struct CircularWidgetView: View {
     var body: some View {
         GeometryReader { geometry in
             ZStack {
-                AccessoryWidgetBackground()
+                Circle()
+                    .size(width: geometry.size.width, height: geometry.size.height)
+                    .opacity(0)
                 VStack {
                     Text("W: \(Int(geometry.size.width))")
                     Text("H: \(Int(geometry.size.height))")
                 }
                 .font(.headline)
             }
+            .containerBackground(for: .widget) { }
         }
     }
 }
@@ -91,7 +90,9 @@ struct HomeScreenWidgetView: View {
                     .font(.footnote)
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(Color.green)
+            .containerBackground(for: .widget) {
+                Color.green
+            }
         }
     }
 }

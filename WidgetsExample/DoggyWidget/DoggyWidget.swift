@@ -62,6 +62,7 @@ struct DoggyWidgetEntryView : View {
         Image(uiImage: entry.image)
             .resizable()
             .scaledToFill()
+            .containerBackground(for: .widget) { }
     }
 }
 
@@ -74,6 +75,7 @@ struct DoggyWidget: Widget {
         }
         .configurationDisplayName("Doggy Widget")
         .description("This is a demo widget.")
+        .contentMarginsDisabled()
         .supportedFamilies([
             .systemSmall
         ])

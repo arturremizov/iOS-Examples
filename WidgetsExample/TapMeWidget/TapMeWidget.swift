@@ -53,7 +53,9 @@ struct TapMeWidgetEntryView : View {
                 .foregroundColor(.white)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(entry.backgroundColor.color)
+        .containerBackground(for: .widget) {
+            entry.backgroundColor.color
+        }
         .widgetURL(entry.backgroundColor.widgetURL)
     }
 }

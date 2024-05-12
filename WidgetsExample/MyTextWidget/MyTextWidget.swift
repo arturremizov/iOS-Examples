@@ -84,6 +84,7 @@ struct MyTextWidgetEntryView : View {
                 RoundedRectangle(cornerRadius: 8, style: .continuous)
                     .strokeBorder(entry.borderColor, lineWidth: 2)
             }
+            .containerBackground(for: .widget) { }
     }
 }
 
@@ -100,6 +101,7 @@ struct MyTextWidget: Widget {
         }
         .configurationDisplayName("MyText Widget")
         .description("Show your favorite text!")
+        .contentMarginsDisabled()
         .supportedFamilies([
             .systemSmall
         ])

@@ -48,8 +48,9 @@ struct BitcoinWalletWidgetEntryView : View {
     
     var body: some View {
         ZStack {
-            customRedactActivateView
-            
+            if #unavailable(iOS 17) {
+                customRedactActivateView
+            }
             VStack(alignment: .leading) {
                 Text(entry.title)
                     .font(.title2)
@@ -70,6 +71,7 @@ struct BitcoinWalletWidgetEntryView : View {
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
+        .containerBackground(for: .widget) { }
     }
 }
 

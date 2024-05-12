@@ -72,29 +72,31 @@ struct CryptoPriceWidgetEntryView : View {
     let entry: CryptoPriceEntry
 
     var body: some View {
-        if let asset = entry.asset {
-            VStack(spacing: 4) {
-                Text(asset.name)
-                    .font(.title2)
+        Group {
+            if let asset = entry.asset {
+                VStack(spacing: 4) {
+                    Text(asset.name)
+                        .font(.title2)
+                        .bold()
+                        .multilineTextAlignment(.center)
+                        .allowsTightening(true)
+                    Text(asset.symbol)
+                        .font(.subheadline)
+                        .foregroundColor(.secondary)
+                    Text(asset.price)
+                        .font(.title3)
+                        .bold()
+                        .padding(.vertical, 2)
+                }
+            } else {
+                Text("Please select an asset")
+                    .font(.footnote)
                     .bold()
                     .multilineTextAlignment(.center)
-                    .allowsTightening(true)
-                Text(asset.symbol)
-                    .font(.subheadline)
-                    .foregroundColor(.secondary)
-                Text(asset.price)
-                    .font(.title3)
-                    .bold()
-                    .padding(.vertical, 2)
             }
-            .padding(8)
-        } else {
-            Text("Please select an asset")
-                .font(.footnote)
-                .bold()
-                .multilineTextAlignment(.center)
-                .padding(8)
         }
+//        .padding(8)
+        .containerBackground(for: .widget) { }
     }
 }
 
