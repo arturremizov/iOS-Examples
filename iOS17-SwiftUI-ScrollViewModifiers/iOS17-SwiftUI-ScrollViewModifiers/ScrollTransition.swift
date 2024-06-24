@@ -26,7 +26,7 @@ struct ScrollTransition: View {
                             topLeading: .interactive,
                             bottomTrailing: .interactive) { view, phase in
                                 view
-                                    .opacity(1 - (phase.value < 0 ? -phase.value : phase.value))
+                                    .opacity(phase.isIdentity ? 1 : 0)
                                     .scaleEffect(1 - (phase.value < 0 ? 0 : phase.value))
                             }
                 }
