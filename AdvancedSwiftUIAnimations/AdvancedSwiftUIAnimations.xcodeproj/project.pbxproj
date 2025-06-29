@@ -13,13 +13,24 @@
 		AF06A8FF2DD4F4AD007E8828 /* ImplicitAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF06A8FE2DD4F4AD007E8828 /* ImplicitAnimations.swift */; };
 		AF06A9012DD4F784007E8828 /* ExplicitAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF06A9002DD4F784007E8828 /* ExplicitAnimations.swift */; };
 		AF06A9032DD4FB08007E8828 /* ShapePathsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF06A9022DD4FB08007E8828 /* ShapePathsExample.swift */; };
+		AF16FBE12E01C8A600C69E48 /* bell.wav in Resources */ = {isa = PBXBuildFile; fileRef = AF16FBE02E01C8A600C69E48 /* bell.wav */; };
+		AF16FBE22E01C8A600C69E48 /* beat.wav in Resources */ = {isa = PBXBuildFile; fileRef = AF16FBDF2E01C8A600C69E48 /* beat.wav */; };
 		AF19BEEC2DF4A5B60051A0B4 /* AnimatingTextExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF19BEEB2DF4A5B60051A0B4 /* AnimatingTextExample.swift */; };
+		AF21FD502E11A40300A57A9A /* TimelineViewUpdatesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF21FD4F2E11A40300A57A9A /* TimelineViewUpdatesExample.swift */; };
+		AF85C9E02E071DAC00214C5C /* TimelineSchedulerExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF85C9DF2E071DAC00214C5C /* TimelineSchedulerExample.swift */; };
+		AF85C9E22E0720D300214C5C /* CustomTimelineSchedulerExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF85C9E12E0720D300214C5C /* CustomTimelineSchedulerExample.swift */; };
 		AF94817B2DDB8F1E00342249 /* AnimationKeyframesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF94817A2DDB8F1E00342249 /* AnimationKeyframesExample.swift */; };
+		AFA2D72B2E09BC3D007C720A /* KeyFrameAnimationsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA2D72A2E09BC3D007C720A /* KeyFrameAnimationsExample.swift */; };
+		AFA2D72D2E09BCB3007C720A /* CyclicTimelineSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA2D72C2E09BCB3007C720A /* CyclicTimelineSchedule.swift */; };
 		AFA427972DF5ED510049FAFC /* AnimatableGradientExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA427962DF5ED510049FAFC /* AnimatableGradientExample.swift */; };
 		AFA427992DF5F3AB0049FAFC /* MovingCounterExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA427982DF5F3AB0049FAFC /* MovingCounterExample.swift */; };
+		AFBF87202E0088080045C4ED /* TimelineViewWithAnimationsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBF871F2E0088080045C4ED /* TimelineViewWithAnimationsExample.swift */; };
 		AFC9FF542DE0E3E300244276 /* FollowPathExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC9FF532DE0E3E300244276 /* FollowPathExample.swift */; };
 		AFD1335B2DDF86DD00801F18 /* AnimationFeedbackExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD1335A2DDF86DD00801F18 /* AnimationFeedbackExample.swift */; };
 		AFD271972DF200CB00FF2AF0 /* IgnoredByLayoutExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD271962DF200CB00FF2AF0 /* IgnoredByLayoutExample.swift */; };
+		AFDD29F42DFF30EF00E670C6 /* TimelineViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDD29F32DFF30EF00E670C6 /* TimelineViewExample.swift */; };
+		AFDD29F62DFF340000E670C6 /* TimelineViewClockExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDD29F52DFF340000E670C6 /* TimelineViewClockExample.swift */; };
+		AFDD29F82DFF35CD00E670C6 /* TimelineQuotesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDD29F72DFF35CD00E670C6 /* TimelineQuotesExample.swift */; };
 		AFE4081D2DD6454F00D4C440 /* AnimatablePairsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE4081C2DD6454F00D4C440 /* AnimatablePairsExample.swift */; };
 		AFE4081F2DD64C2A00D4C440 /* VectorArithmeticExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE4081E2DD64C2A00D4C440 /* VectorArithmeticExample.swift */; };
 /* End PBXBuildFile section */
@@ -32,13 +43,24 @@
 		AF06A8FE2DD4F4AD007E8828 /* ImplicitAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImplicitAnimations.swift; sourceTree = "<group>"; };
 		AF06A9002DD4F784007E8828 /* ExplicitAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplicitAnimations.swift; sourceTree = "<group>"; };
 		AF06A9022DD4FB08007E8828 /* ShapePathsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapePathsExample.swift; sourceTree = "<group>"; };
+		AF16FBDF2E01C8A600C69E48 /* beat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = beat.wav; sourceTree = "<group>"; };
+		AF16FBE02E01C8A600C69E48 /* bell.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bell.wav; sourceTree = "<group>"; };
 		AF19BEEB2DF4A5B60051A0B4 /* AnimatingTextExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatingTextExample.swift; sourceTree = "<group>"; };
+		AF21FD4F2E11A40300A57A9A /* TimelineViewUpdatesExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewUpdatesExample.swift; sourceTree = "<group>"; };
+		AF85C9DF2E071DAC00214C5C /* TimelineSchedulerExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineSchedulerExample.swift; sourceTree = "<group>"; };
+		AF85C9E12E0720D300214C5C /* CustomTimelineSchedulerExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTimelineSchedulerExample.swift; sourceTree = "<group>"; };
 		AF94817A2DDB8F1E00342249 /* AnimationKeyframesExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationKeyframesExample.swift; sourceTree = "<group>"; };
+		AFA2D72A2E09BC3D007C720A /* KeyFrameAnimationsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyFrameAnimationsExample.swift; sourceTree = "<group>"; };
+		AFA2D72C2E09BCB3007C720A /* CyclicTimelineSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyclicTimelineSchedule.swift; sourceTree = "<group>"; };
 		AFA427962DF5ED510049FAFC /* AnimatableGradientExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableGradientExample.swift; sourceTree = "<group>"; };
 		AFA427982DF5F3AB0049FAFC /* MovingCounterExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovingCounterExample.swift; sourceTree = "<group>"; };
+		AFBF871F2E0088080045C4ED /* TimelineViewWithAnimationsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewWithAnimationsExample.swift; sourceTree = "<group>"; };
 		AFC9FF532DE0E3E300244276 /* FollowPathExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowPathExample.swift; sourceTree = "<group>"; };
 		AFD1335A2DDF86DD00801F18 /* AnimationFeedbackExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationFeedbackExample.swift; sourceTree = "<group>"; };
 		AFD271962DF200CB00FF2AF0 /* IgnoredByLayoutExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IgnoredByLayoutExample.swift; sourceTree = "<group>"; };
+		AFDD29F32DFF30EF00E670C6 /* TimelineViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewExample.swift; sourceTree = "<group>"; };
+		AFDD29F52DFF340000E670C6 /* TimelineViewClockExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewClockExample.swift; sourceTree = "<group>"; };
+		AFDD29F72DFF35CD00E670C6 /* TimelineQuotesExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineQuotesExample.swift; sourceTree = "<group>"; };
 		AFE4081C2DD6454F00D4C440 /* AnimatablePairsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatablePairsExample.swift; sourceTree = "<group>"; };
 		AFE4081E2DD64C2A00D4C440 /* VectorArithmeticExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VectorArithmeticExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,8 +106,11 @@
 				AF06A8FD2DD4F409007E8828 /* Paths */,
 				AF9481792DDB8D9E00342249 /* GeometryEffect */,
 				AF19BEEA2DF4A58C0051A0B4 /* Animatable View */,
+				AFDD29F22DFF2E1800E670C6 /* TimelineView */,
 				AF06A8F52DD4F3FA007E8828 /* AdvancedSwiftUIAnimationsApp.swift */,
 				AF06A8F62DD4F3FA007E8828 /* Assets.xcassets */,
+				AF16FBDF2E01C8A600C69E48 /* beat.wav */,
+				AF16FBE02E01C8A600C69E48 /* bell.wav */,
 				AF06A8F42DD4F3FA007E8828 /* Preview Content */,
 			);
 			path = AdvancedSwiftUIAnimations;
@@ -122,6 +147,30 @@
 				AFD271962DF200CB00FF2AF0 /* IgnoredByLayoutExample.swift */,
 			);
 			path = GeometryEffect;
+			sourceTree = "<group>";
+		};
+		AFA2D72E2E09BCC6007C720A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AFA2D72C2E09BCB3007C720A /* CyclicTimelineSchedule.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		AFDD29F22DFF2E1800E670C6 /* TimelineView */ = {
+			isa = PBXGroup;
+			children = (
+				AFDD29F32DFF30EF00E670C6 /* TimelineViewExample.swift */,
+				AFDD29F52DFF340000E670C6 /* TimelineViewClockExample.swift */,
+				AFDD29F72DFF35CD00E670C6 /* TimelineQuotesExample.swift */,
+				AFBF871F2E0088080045C4ED /* TimelineViewWithAnimationsExample.swift */,
+				AF85C9DF2E071DAC00214C5C /* TimelineSchedulerExample.swift */,
+				AF85C9E12E0720D300214C5C /* CustomTimelineSchedulerExample.swift */,
+				AFA2D72A2E09BC3D007C720A /* KeyFrameAnimationsExample.swift */,
+				AF21FD4F2E11A40300A57A9A /* TimelineViewUpdatesExample.swift */,
+				AFA2D72E2E09BCC6007C720A /* Helpers */,
+			);
+			path = TimelineView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +235,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF06A8F92DD4F3FA007E8828 /* Preview Assets.xcassets in Resources */,
+				AF16FBE12E01C8A600C69E48 /* bell.wav in Resources */,
+				AF16FBE22E01C8A600C69E48 /* beat.wav in Resources */,
 				AF06A8FA2DD4F3FA007E8828 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,17 +248,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF85C9E22E0720D300214C5C /* CustomTimelineSchedulerExample.swift in Sources */,
 				AFA427992DF5F3AB0049FAFC /* MovingCounterExample.swift in Sources */,
 				AFD271972DF200CB00FF2AF0 /* IgnoredByLayoutExample.swift in Sources */,
 				AF06A9012DD4F784007E8828 /* ExplicitAnimations.swift in Sources */,
+				AF85C9E02E071DAC00214C5C /* TimelineSchedulerExample.swift in Sources */,
 				AFE4081F2DD64C2A00D4C440 /* VectorArithmeticExample.swift in Sources */,
+				AF21FD502E11A40300A57A9A /* TimelineViewUpdatesExample.swift in Sources */,
 				AFD1335B2DDF86DD00801F18 /* AnimationFeedbackExample.swift in Sources */,
 				AFC9FF542DE0E3E300244276 /* FollowPathExample.swift in Sources */,
 				AF06A9032DD4FB08007E8828 /* ShapePathsExample.swift in Sources */,
 				AF06A8FB2DD4F3FA007E8828 /* AdvancedSwiftUIAnimationsApp.swift in Sources */,
+				AFDD29F62DFF340000E670C6 /* TimelineViewClockExample.swift in Sources */,
 				AF94817B2DDB8F1E00342249 /* AnimationKeyframesExample.swift in Sources */,
+				AFA2D72D2E09BCB3007C720A /* CyclicTimelineSchedule.swift in Sources */,
+				AFDD29F82DFF35CD00E670C6 /* TimelineQuotesExample.swift in Sources */,
+				AFA2D72B2E09BC3D007C720A /* KeyFrameAnimationsExample.swift in Sources */,
 				AFE4081D2DD6454F00D4C440 /* AnimatablePairsExample.swift in Sources */,
+				AFDD29F42DFF30EF00E670C6 /* TimelineViewExample.swift in Sources */,
 				AF19BEEC2DF4A5B60051A0B4 /* AnimatingTextExample.swift in Sources */,
+				AFBF87202E0088080045C4ED /* TimelineViewWithAnimationsExample.swift in Sources */,
 				AFA427972DF5ED510049FAFC /* AnimatableGradientExample.swift in Sources */,
 				AF06A8FF2DD4F4AD007E8828 /* ImplicitAnimations.swift in Sources */,
 			);
