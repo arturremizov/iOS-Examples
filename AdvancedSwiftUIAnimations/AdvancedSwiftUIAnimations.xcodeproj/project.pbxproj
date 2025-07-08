@@ -17,6 +17,9 @@
 		AF16FBE22E01C8A600C69E48 /* beat.wav in Resources */ = {isa = PBXBuildFile; fileRef = AF16FBDF2E01C8A600C69E48 /* beat.wav */; };
 		AF19BEEC2DF4A5B60051A0B4 /* AnimatingTextExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF19BEEB2DF4A5B60051A0B4 /* AnimatingTextExample.swift */; };
 		AF21FD502E11A40300A57A9A /* TimelineViewUpdatesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF21FD4F2E11A40300A57A9A /* TimelineViewUpdatesExample.swift */; };
+		AF21FD532E11A87200A57A9A /* CanvasExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF21FD522E11A87200A57A9A /* CanvasExample.swift */; };
+		AF3F97EB2E1D792F00B775F7 /* MutatingGraphicContextExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3F97EA2E1D792F00B775F7 /* MutatingGraphicContextExample.swift */; };
+		AF3F97ED2E1D7D3000B775F7 /* AnimatingCanvasExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3F97EC2E1D7D3000B775F7 /* AnimatingCanvasExample.swift */; };
 		AF85C9E02E071DAC00214C5C /* TimelineSchedulerExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF85C9DF2E071DAC00214C5C /* TimelineSchedulerExample.swift */; };
 		AF85C9E22E0720D300214C5C /* CustomTimelineSchedulerExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF85C9E12E0720D300214C5C /* CustomTimelineSchedulerExample.swift */; };
 		AF94817B2DDB8F1E00342249 /* AnimationKeyframesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF94817A2DDB8F1E00342249 /* AnimationKeyframesExample.swift */; };
@@ -24,6 +27,9 @@
 		AFA2D72D2E09BCB3007C720A /* CyclicTimelineSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA2D72C2E09BCB3007C720A /* CyclicTimelineSchedule.swift */; };
 		AFA427972DF5ED510049FAFC /* AnimatableGradientExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA427962DF5ED510049FAFC /* AnimatableGradientExample.swift */; };
 		AFA427992DF5F3AB0049FAFC /* MovingCounterExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA427982DF5F3AB0049FAFC /* MovingCounterExample.swift */; };
+		AFBA14512E14401D001D48CD /* GraphicsContextTextExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBA14502E14401D001D48CD /* GraphicsContextTextExample.swift */; };
+		AFBA14532E1442C7001D48CD /* SymbolsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBA14522E1442C7001D48CD /* SymbolsExample.swift */; };
+		AFBA14552E1444FC001D48CD /* AnimatedSymbolsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBA14542E1444FC001D48CD /* AnimatedSymbolsExample.swift */; };
 		AFBF87202E0088080045C4ED /* TimelineViewWithAnimationsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBF871F2E0088080045C4ED /* TimelineViewWithAnimationsExample.swift */; };
 		AFC9FF542DE0E3E300244276 /* FollowPathExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC9FF532DE0E3E300244276 /* FollowPathExample.swift */; };
 		AFD1335B2DDF86DD00801F18 /* AnimationFeedbackExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD1335A2DDF86DD00801F18 /* AnimationFeedbackExample.swift */; };
@@ -47,6 +53,9 @@
 		AF16FBE02E01C8A600C69E48 /* bell.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bell.wav; sourceTree = "<group>"; };
 		AF19BEEB2DF4A5B60051A0B4 /* AnimatingTextExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatingTextExample.swift; sourceTree = "<group>"; };
 		AF21FD4F2E11A40300A57A9A /* TimelineViewUpdatesExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewUpdatesExample.swift; sourceTree = "<group>"; };
+		AF21FD522E11A87200A57A9A /* CanvasExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasExample.swift; sourceTree = "<group>"; };
+		AF3F97EA2E1D792F00B775F7 /* MutatingGraphicContextExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MutatingGraphicContextExample.swift; sourceTree = "<group>"; };
+		AF3F97EC2E1D7D3000B775F7 /* AnimatingCanvasExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatingCanvasExample.swift; sourceTree = "<group>"; };
 		AF85C9DF2E071DAC00214C5C /* TimelineSchedulerExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineSchedulerExample.swift; sourceTree = "<group>"; };
 		AF85C9E12E0720D300214C5C /* CustomTimelineSchedulerExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTimelineSchedulerExample.swift; sourceTree = "<group>"; };
 		AF94817A2DDB8F1E00342249 /* AnimationKeyframesExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationKeyframesExample.swift; sourceTree = "<group>"; };
@@ -54,6 +63,9 @@
 		AFA2D72C2E09BCB3007C720A /* CyclicTimelineSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyclicTimelineSchedule.swift; sourceTree = "<group>"; };
 		AFA427962DF5ED510049FAFC /* AnimatableGradientExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableGradientExample.swift; sourceTree = "<group>"; };
 		AFA427982DF5F3AB0049FAFC /* MovingCounterExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovingCounterExample.swift; sourceTree = "<group>"; };
+		AFBA14502E14401D001D48CD /* GraphicsContextTextExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphicsContextTextExample.swift; sourceTree = "<group>"; };
+		AFBA14522E1442C7001D48CD /* SymbolsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolsExample.swift; sourceTree = "<group>"; };
+		AFBA14542E1444FC001D48CD /* AnimatedSymbolsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedSymbolsExample.swift; sourceTree = "<group>"; };
 		AFBF871F2E0088080045C4ED /* TimelineViewWithAnimationsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewWithAnimationsExample.swift; sourceTree = "<group>"; };
 		AFC9FF532DE0E3E300244276 /* FollowPathExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowPathExample.swift; sourceTree = "<group>"; };
 		AFD1335A2DDF86DD00801F18 /* AnimationFeedbackExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationFeedbackExample.swift; sourceTree = "<group>"; };
@@ -107,6 +119,7 @@
 				AF9481792DDB8D9E00342249 /* GeometryEffect */,
 				AF19BEEA2DF4A58C0051A0B4 /* Animatable View */,
 				AFDD29F22DFF2E1800E670C6 /* TimelineView */,
+				AF21FD512E11A85800A57A9A /* Canvas */,
 				AF06A8F52DD4F3FA007E8828 /* AdvancedSwiftUIAnimationsApp.swift */,
 				AF06A8F62DD4F3FA007E8828 /* Assets.xcassets */,
 				AF16FBDF2E01C8A600C69E48 /* beat.wav */,
@@ -136,6 +149,19 @@
 				AFA427982DF5F3AB0049FAFC /* MovingCounterExample.swift */,
 			);
 			path = "Animatable View";
+			sourceTree = "<group>";
+		};
+		AF21FD512E11A85800A57A9A /* Canvas */ = {
+			isa = PBXGroup;
+			children = (
+				AF21FD522E11A87200A57A9A /* CanvasExample.swift */,
+				AFBA14502E14401D001D48CD /* GraphicsContextTextExample.swift */,
+				AFBA14522E1442C7001D48CD /* SymbolsExample.swift */,
+				AFBA14542E1444FC001D48CD /* AnimatedSymbolsExample.swift */,
+				AF3F97EA2E1D792F00B775F7 /* MutatingGraphicContextExample.swift */,
+				AF3F97EC2E1D7D3000B775F7 /* AnimatingCanvasExample.swift */,
+			);
+			path = Canvas;
 			sourceTree = "<group>";
 		};
 		AF9481792DDB8D9E00342249 /* GeometryEffect */ = {
@@ -251,21 +277,27 @@
 				AF85C9E22E0720D300214C5C /* CustomTimelineSchedulerExample.swift in Sources */,
 				AFA427992DF5F3AB0049FAFC /* MovingCounterExample.swift in Sources */,
 				AFD271972DF200CB00FF2AF0 /* IgnoredByLayoutExample.swift in Sources */,
+				AF3F97ED2E1D7D3000B775F7 /* AnimatingCanvasExample.swift in Sources */,
 				AF06A9012DD4F784007E8828 /* ExplicitAnimations.swift in Sources */,
 				AF85C9E02E071DAC00214C5C /* TimelineSchedulerExample.swift in Sources */,
+				AFBA14532E1442C7001D48CD /* SymbolsExample.swift in Sources */,
 				AFE4081F2DD64C2A00D4C440 /* VectorArithmeticExample.swift in Sources */,
 				AF21FD502E11A40300A57A9A /* TimelineViewUpdatesExample.swift in Sources */,
 				AFD1335B2DDF86DD00801F18 /* AnimationFeedbackExample.swift in Sources */,
 				AFC9FF542DE0E3E300244276 /* FollowPathExample.swift in Sources */,
+				AFBA14512E14401D001D48CD /* GraphicsContextTextExample.swift in Sources */,
 				AF06A9032DD4FB08007E8828 /* ShapePathsExample.swift in Sources */,
 				AF06A8FB2DD4F3FA007E8828 /* AdvancedSwiftUIAnimationsApp.swift in Sources */,
 				AFDD29F62DFF340000E670C6 /* TimelineViewClockExample.swift in Sources */,
+				AF21FD532E11A87200A57A9A /* CanvasExample.swift in Sources */,
 				AF94817B2DDB8F1E00342249 /* AnimationKeyframesExample.swift in Sources */,
 				AFA2D72D2E09BCB3007C720A /* CyclicTimelineSchedule.swift in Sources */,
 				AFDD29F82DFF35CD00E670C6 /* TimelineQuotesExample.swift in Sources */,
+				AF3F97EB2E1D792F00B775F7 /* MutatingGraphicContextExample.swift in Sources */,
 				AFA2D72B2E09BC3D007C720A /* KeyFrameAnimationsExample.swift in Sources */,
 				AFE4081D2DD6454F00D4C440 /* AnimatablePairsExample.swift in Sources */,
 				AFDD29F42DFF30EF00E670C6 /* TimelineViewExample.swift in Sources */,
+				AFBA14552E1444FC001D48CD /* AnimatedSymbolsExample.swift in Sources */,
 				AF19BEEC2DF4A5B60051A0B4 /* AnimatingTextExample.swift in Sources */,
 				AFBF87202E0088080045C4ED /* TimelineViewWithAnimationsExample.swift in Sources */,
 				AFA427972DF5ED510049FAFC /* AnimatableGradientExample.swift in Sources */,

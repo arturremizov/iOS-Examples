@@ -11,7 +11,7 @@ import SwiftUI
 struct AdvancedSwiftUIAnimationsApp: App {
     var body: some Scene {
         WindowGroup {
-            TimelineViewUpdatesExample()
+            AnimatedSymbolsExample()
         }
     }
 }
